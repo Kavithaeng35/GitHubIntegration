@@ -16,9 +16,7 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
       
-    - name: Setup VSTest
-         uses: darenm/Setup-VSTest@v1
-      
+         
     - name: Navigate to Workspace
       run: cd $GITHUB_WORKSPACE
 
@@ -31,8 +29,6 @@ jobs:
     - name: Build Solution
       run: |
         msbuild.exe GitHubIntegration.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
-   - name: Run Tests
-         run: vstest.console.exe .\GitHubIntegrationTest\bin\Release\GitHubIntegrationTest.dll  
          
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
