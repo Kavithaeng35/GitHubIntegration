@@ -11,5 +11,17 @@ namespace GitHubIntegrationTest
         {
             Assert.Equals(100,100);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            Assert.Equals(100, 101);
+        }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            Assert.Equals(101, 102);
+        }
     }
 }
