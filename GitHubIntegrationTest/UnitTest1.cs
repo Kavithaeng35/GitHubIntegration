@@ -9,19 +9,19 @@ namespace GitHubIntegrationTest
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.Equals(100,100);
+            Assert.AreEqual(100,100);
         }
 
         [TestMethod]
         public void TestMethod2()
         {
-            Assert.Equals(100, 101);
+            Assert.AreEqual(100, 101);
         }
 
         [TestMethod]
         public void TestMethod3()
         {
-            Assert.Equals(101, 102);
+            Assert.AreEqual(101, 102);
         }
     }
 }
