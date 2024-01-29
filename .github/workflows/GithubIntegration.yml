@@ -30,7 +30,14 @@ jobs:
       run: |
         msbuild.exe GitHubIntegration.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
     - name: Test
-      run: dotnet test GitHubIntegrationTest.csproj     
+      run: dotnet test GitHubIntegrationTest.csproj    
+    - name: Run vstests
+      uses: microsoft/vstest-action@v1.0.0
+      with:
+       testAssembly: GitHubIntegrationTest.dll
+       searchFolder: .\GitHubIntegrationTest\bin\Release\
+       runInParallel: true
+       
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
