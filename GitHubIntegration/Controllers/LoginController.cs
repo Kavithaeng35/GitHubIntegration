@@ -9,6 +9,8 @@ namespace GitHubIntegration.Controllers
     public class LoginController : Controller
     {
         public ActionResult Index()
+        {   
+            // Added Feature 2
         {        
             // Added Feature 3
             return View();
