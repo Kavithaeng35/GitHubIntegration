@@ -11,7 +11,7 @@ namespace GitHubIntegration.Controllers
         // GET: Login
         public ActionResult Index()
         {
-            int result=20+30;
+             int result=50+50;
             return View();
         }
     }
