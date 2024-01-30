@@ -11,8 +11,6 @@ namespace GitHubIntegration.Controllers
         public ActionResult Index()
         {
             return View();
-
-
         }
 
         public ActionResult About()
