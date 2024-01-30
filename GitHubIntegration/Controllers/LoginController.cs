@@ -12,6 +12,7 @@ namespace GitHubIntegration.Controllers
         {   
             // Added Feature 2
             // Added Feature 4
+            // Added Feature 7
             return View();
         }
     }
