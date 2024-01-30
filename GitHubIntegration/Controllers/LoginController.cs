@@ -20,12 +20,7 @@ namespace GitHubIntegration.Controllers
             return View();
         }
 
-         public ActionResult Index1()
-        {
-            return View();
-        }
-
-         public ActionResult Index4()
+        public ActionResult Index3()
         {          
             return View();
         }
