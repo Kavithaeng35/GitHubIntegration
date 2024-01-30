@@ -14,5 +14,10 @@ namespace GitHubIntegration.Controllers
              int result=50+50;
             return View();
         }
+
+         public ActionResult Index1()
+        {
+            return View();
+        }
     }
 }
