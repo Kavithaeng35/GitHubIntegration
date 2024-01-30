@@ -11,6 +11,7 @@ namespace GitHubIntegration.Controllers
         public ActionResult Index()
         {   
             // Added Feature 2
+            // Added Feature 4
             return View();
         }
     }
